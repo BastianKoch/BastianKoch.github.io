@@ -251,8 +251,8 @@ defaults:
       author_profile: true
       share: true
       comments: true
-   # _portfolio
-   - scope:
+  # _portfolio
+  - scope:
       path: ""
       type: portfolio
     values:
@@ -260,8 +260,8 @@ defaults:
       author_profile: true
       share: true
       comment: true
-   # _talks
-   - scope:
+  # _talks
+  - scope:
       path: ""
       type: talks
     values:
