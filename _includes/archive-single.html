@@ -50,6 +50,13 @@
     <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
     {% endif %}
     
+    {% if post.abstract %}
+    <p style="margin-top: 0.3em;">
+      <a href="#" class="abstract-toggle" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'?'block':'none'; this.textContent=this.textContent==='Abstract ▼'?'Abstract ▲':'Abstract ▼'; return false;" style="font-size:0.85em; text-decoration:none; color:#555;">Abstract ▼</a>
+    </p>
+    <div class="abstract-content" style="display:none; font-size:0.9em; color:#333; margin-bottom:0.8em;">{{ post.abstract }}</div>
+    {% endif %}
+
     {% if post.citation and post.paperurl %}
       <p>Recommended citation: {{ post.citation }} <a href="{{ post.paperurl }}">{{ post.paperurl }}</a></p>
     {% elsif post.citation %}
