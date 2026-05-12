@@ -52,7 +52,7 @@
     
     {% if post.abstract %}
     <p style="margin-top: 0.3em;">
-      <a href="#" class="abstract-toggle" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'?'block':'none'; this.textContent=this.textContent==='Abstract ▼'?'Abstract ▲':'Abstract ▼'; return false;" style="font-size:0.85em; text-decoration:none; color:#555;">Abstract ▼</a>
+      <a href="#" class="abstract-toggle" onclick="var d=this.parentElement.nextElementSibling; d.style.display=d.style.display==='none'?'block':'none'; this.textContent=this.textContent==='Abstract ▼'?'Abstract ▲':'Abstract ▼'; return false;" style="font-size:0.85em; text-decoration:none; color:#555;">Abstract ▼</a>
     </p>
     <div class="abstract-content" style="display:none; font-size:0.9em; color:#333; margin-bottom:0.8em;">{{ post.abstract }}</div>
     {% endif %}
