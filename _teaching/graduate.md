@@ -4,6 +4,7 @@ collection: teaching
 type: "Graduate"
 permalink: /teaching/graduate
 venue: "University of Mannheim"
+no_link: true
 ---
 
 - Corporate Finance I
