@@ -56,3 +56,9 @@
     font-weight: 700;
   }
 }
+
+.uma-logo-link {
+  @include breakpoint(max-width $medium) {
+    display: none;
+  }
+}
