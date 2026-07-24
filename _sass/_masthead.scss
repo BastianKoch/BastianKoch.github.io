@@ -59,7 +59,7 @@
 
 .uma-logo-item {
   display: none;
-  padding-right: 0.75em !important;
+  padding-right: 0.25em !important;
 
   @include breakpoint($large) {
     display: block;
