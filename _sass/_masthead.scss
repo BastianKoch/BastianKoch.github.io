@@ -56,3 +56,20 @@
     font-weight: 700;
   }
 }
+
+.uma-logo-link {
+  display: none;
+  position: absolute;
+  right: 1.5em;
+  top: 50%;
+  transform: translateY(-50%);
+
+  img {
+    height: 50px;
+    display: block;
+  }
+
+  @include breakpoint($large) {
+    display: block;
+  }
+}
