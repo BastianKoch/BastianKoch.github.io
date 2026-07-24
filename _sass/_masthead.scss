@@ -58,7 +58,9 @@
 }
 
 .uma-logo-link {
-  @include breakpoint(max-width $medium) {
-    display: none;
+  display: none;
+
+  @include breakpoint($large) {
+    display: block;
   }
 }
