@@ -22,10 +22,6 @@
     padding: 1em 1em 1em;
     font-family: $sans-serif-narrow;
 
-    @include breakpoint($large) {
-      padding-left: 200px;
-    }
-
     @include breakpoint($x-large) {
       max-width: $x-large;
     }
@@ -61,7 +57,7 @@
   }
 }
 
-.uma-logo-link {
+.uma-logo-item {
   display: none;
 
   @include breakpoint($large) {
