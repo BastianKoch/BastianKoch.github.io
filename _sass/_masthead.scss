@@ -18,9 +18,11 @@
 
   &__inner-wrap {
     @include container;
-    @include clearfix;
-    padding: 1em 1em 1em;
+    padding: 0 1em;
     font-family: $sans-serif-narrow;
+    display: flex;
+    align-items: center;
+    height: $masthead-height;
 
     @include breakpoint($x-large) {
       max-width: $x-large;
@@ -36,7 +38,24 @@
   }
 }
 
+.uma-logo-link {
+  display: none;
+  flex-shrink: 0;
+  margin-right: 1em;
+
+  img {
+    height: 55px;
+    display: block;
+  }
+
+  @include breakpoint($large) {
+    display: block;
+  }
+}
+
 .masthead__menu {
+  flex: 1;
+  min-width: 0;
 
   ul {
     margin: 0;
@@ -54,14 +73,5 @@
   &--lg {
     padding-right: 2em;
     font-weight: 700;
-  }
-}
-
-.uma-logo-item {
-  display: none;
-  padding-right: 0.25em !important;
-
-  @include breakpoint($large) {
-    display: block;
   }
 }
