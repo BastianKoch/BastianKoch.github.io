@@ -7,4 +7,8 @@ redirect_from:
   - /resume
 ---
 
-You can download my CV as a PDF [here](/files/CV.pdf).
+<a href="/files/CV.pdf" download>Download PDF</a>
+
+<iframe src="/files/CV.pdf" width="100%" height="1000px" style="border:none;">
+  Your browser does not support embedded PDFs. Please <a href="/files/CV.pdf">download the PDF</a> to view it.
+</iframe>
