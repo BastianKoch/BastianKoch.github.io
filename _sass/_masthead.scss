@@ -19,8 +19,11 @@
   &__inner-wrap {
     @include container;
     @include clearfix;
-    padding: 1em 1em 1em;
+    padding: 0 1em;
     font-family: $sans-serif-narrow;
+    display: flex;
+    align-items: center;
+    height: $masthead-height;
 
     @include breakpoint($x-large) {
       max-width: $x-large;
@@ -28,6 +31,7 @@
 
     nav {
       z-index: 10;
+      flex: 1;
     }
 
     a {
@@ -59,6 +63,8 @@
 
 .uma-logo-link {
   display: none;
+  flex-shrink: 0;
+  margin-right: 1em;
 
   @include breakpoint($large) {
     display: block;
