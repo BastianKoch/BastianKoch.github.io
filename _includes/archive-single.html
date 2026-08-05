@@ -44,6 +44,10 @@
           <p> {{ post.type }}, <i>{{ post.venue }}</i> </p>
         {% endif %}
 
+    {% if post.coauthors %}
+    <p style="font-size:0.9em; margin-top:0.3em;">{{ post.coauthors }}</p>
+    {% endif %}
+
     {% if post.abstract %}
     <details class="abstract-toggle">
       <summary>Abstract</summary>
