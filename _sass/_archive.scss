@@ -243,3 +243,25 @@
     }
   }
 }
+
+.abstract-toggle {
+  margin-top: 0.5em;
+
+  summary {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.9em;
+    color: $dark-gray;
+    user-select: none;
+
+    &:hover {
+      color: $link-color;
+    }
+  }
+
+  p {
+    font-size: 0.9em;
+    margin-top: 0.5em;
+    color: $text-color;
+  }
+}
